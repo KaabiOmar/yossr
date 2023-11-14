@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.forum.NewPublicationFragment">
+
+    <!-- Champ pour le titre de la publication -->
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titre de la publication" />
+
+    <!-- Champ pour le contenu de la publication -->
+    <EditText
+        android:id="@+id/edit_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contenu de la publication"
+        android:inputType="textMultiLine"
+        android:lines="4" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_upload_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Image"
+        android:onClick="onUploadImageClick" />
+
+    <!-- Bouton pour soumettre la nouvelle publication -->
+    <Button
+        android:id="@+id/btn_add_publication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajouter Publication"
+        android:onClick="onAddPublicationClick" />
+
+
+</LinearLayout>

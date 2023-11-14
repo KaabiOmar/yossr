@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Image as background -->
+    <ImageView
+        android:id="@+id/imageview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+       />
+
+    <!-- Form content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Claims"
+            android:textSize="24sp"
+            android:textColor="#007BFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/editTextSubject"
+            style="@style/FormField"
+            android:hint="Your Subject"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="91dp"
+            android:textColor="#007BFF"
+
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editTextDescription"
+            style="@style/FormField"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:hint="Your Description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextSubject" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            style="@style/SubmitButton"
+            android:layout_marginTop="92dp"
+            android:text="Submit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
+            android:onClick="onSubmitButtonClick" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_destination"
+            android:icon="@drawable/baseline_where_to_vote_24"
+            android:title="@string/menu_destination" />
+        <item
+            android:id="@+id/nav_activity"
+            android:icon="@drawable/baseline_event_24"
+            android:title="@string/menu_activity" />
+        <item
+            android:id="@+id/nav_claims"
+            android:icon="@drawable/baseline_chat_bubble_outline_24"
+            android:title="@string/menu_claims" />
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/baseline_forum_24"
+            android:title="@string/menu_forum" />
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/baseline_attach_money_24"
+            android:title="@string/menu_offers" />
+
+
+    </group>
+</menu>

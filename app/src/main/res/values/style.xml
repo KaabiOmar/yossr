@@ -1,0 +1,20 @@
+<resources>
+
+    <style name="FormField">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">#F0F0F0</item>
+        <!-- Ajoutez d'autres attributs de style ici -->
+    </style>
+
+    <style name="SubmitButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:backgroundTint">#007BFF</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <!-- Ajoutez d'autres attributs de style ici -->
+    </style>
+
+</resources>

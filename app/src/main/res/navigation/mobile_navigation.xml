@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="tn.esprit.tourbuddy.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="tn.esprit.tourbuddy.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_destination"
+        android:name="tn.esprit.tourbuddy.ui.destination.DestinationFragment"
+        android:label="@string/menu_destination"
+        tools:layout="@layout/fragment_destination" />
+
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="tn.esprit.tourbuddy.ui.activity.ActivityFragment"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity" />
+
+    <fragment
+        android:id="@+id/nav_claims"
+        android:name="tn.esprit.tourbuddy.ui.claims.ClaimsFragment"
+        android:label="@string/menu_claims"
+        tools:layout="@layout/fragment_claims" />
+    <fragment
+        android:id="@+id/nav_new_claims"
+        android:name="tn.esprit.tourbuddy.ui.claims.NewClaimsFragment"
+        android:label="ClaimsFragment"
+        tools:layout="@layout/fragment_new_claims">
+
+        <!-- Cette action vous permet de naviguer vers le fragment de formulaire de réclamation -->
+        <action
+            android:id="@+id/action_claimsFragment_to_newClaimsFragment"
+            app:destination="@id/nav_new_claims" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_forum"
+        android:name="tn.esprit.tourbuddy.ui.forum.ForumFragment"
+        android:label="ForumFragment"
+        tools:layout="@layout/fragment_forum" >
+        <action
+            android:id="@+id/action_forumFragment_to_newPublicationFragment"
+            app:destination="@id/nav_new_publication" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_offers"
+        android:name="tn.esprit.tourbuddy.ui.offers.OffersFragment"
+        android:label="@string/menu_offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/nav_publication_details"
+        android:name="tn.esprit.tourbuddy.ui.forum.PublicationDetailFragment"
+        tools:layout="@layout/fragment_detailpub" />
+
+    <fragment
+        android:id="@+id/nav_new_publication"
+        android:name="tn.esprit.tourbuddy.ui.forum.NewPublicationFragment"
+        android:label="NewPublicationFragment"
+        tools:layout="@layout/fragment_new_publication" />
+
+</navigation>
